@@ -1,0 +1,119 @@
+.features {
+    padding: 80px 151px;
+
+    .head {
+        position: relative;
+        font-family: "LoewNextBold";
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 120%;
+        letter-spacing: 0px;
+        text-align: center;
+        color: #154B89;
+        z-index: 1;
+        .underline-title {
+            position: relative;
+            z-index: 1;
+            &::after {
+                content: "";
+                position: absolute;
+                left: 5px;
+                bottom: 6px;
+                width: 96%;
+                height: 23px;
+                background-color: #a6c9f1;
+                border-radius: 2px;
+                z-index: -1;
+            }
+        }
+    }
+}
+.section-features {
+    background-color: #F1F5F9;
+    padding: 130px 160px;
+    
+    .logo {
+        width: 70px;
+        height: 70px;
+        padding: 16px;
+        border-radius: 8px;
+        background-color: #154B89;
+    }
+
+    .content {
+        .title {
+            font-family: "LoewNextBold";
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 30px;
+            letter-spacing: 0;
+            vertical-align: middle;
+            color: #111827;
+        }
+
+        p {
+            font-family: "LoewNextMeduim";
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 19px;
+            letter-spacing: 0;
+            vertical-align: bottom;
+            width: 346px;
+            color: #6B7280;
+        }
+    }
+}
+
+.image {
+    position: relative;
+    padding: 0 45px 0 0;
+
+    img {
+        width: 478px;
+        height: 441px;
+        border-radius: 20px;
+        position: absolute;
+        top: 75px;
+        right: 165px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .features {
+        padding: 100px 20px;
+
+        .head {
+            font-size: 32px;
+            line-height: 120%;
+            .underline-title {
+                &::after {
+                    bottom: 4px;
+                    height: 18px;
+                }
+            }
+        }
+    }
+
+    .section-features {
+        padding: 100px 20px;
+        .container-content {
+            display: flex;
+            align-items: center;
+            .content {
+                margin-left: 20px;
+            }
+        }
+        
+    }
+
+    .image {
+        img {
+            width: 100%;
+            height: auto;
+            position: relative;
+            top: auto;
+            right: auto;
+        }
+    }
+    
+}

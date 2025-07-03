@@ -1,0 +1,100 @@
+.testimonials {
+    background-color: #E4EFFB;
+    padding: 96px 151px;
+
+    h1 {
+        font-family: "LoewNextBold";
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 120%;
+        letter-spacing: 0px;
+        text-align: center;
+        color: #154B89;
+        .underline-title {
+            position: relative;
+            z-index: 1;
+            &::after {
+                content: "";
+                position: absolute;
+                left: 0;
+                bottom: 6px;
+                width: 100%;
+                height: 23px;
+                background-color: #a6c9f1;
+                border-radius: 2px;
+                z-index: -1;
+            }
+        }
+    }
+
+    .cards {
+        height: auto;
+        border-radius: 8px;
+        padding: 24px;
+        background-color: #FFFFFF;
+        box-shadow: 0px 3px 5px 0px #0000000D;
+        ::ng-deep {
+            .p-rating {
+                .p-rating-icon {
+                  color: #F59E0B;
+                }
+            }
+        }
+
+        p {
+            font-family: "LoewNextMeduim";
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 21px;
+            letter-spacing: 0;
+            color: #111827;
+        }
+
+        img {
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+        }
+
+        .name {
+            font-family: "LoewNextBold";
+            font-weight: 700;
+            font-size: 12px;
+            line-height: 18px;
+            letter-spacing: 0%;
+        }
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .testimonials {
+        padding: 48px 24px;
+
+        h1 {
+            font-size: 32px;
+            line-height: 40px;
+        }
+
+        .cards {
+            height: auto;
+            padding: 16px;
+
+            p {
+                font-size: 12px;
+                line-height: 18px;
+            }
+
+            img {
+                width: 24px;
+                height: 24px;
+            }
+
+            .name {
+                font-size: 10px;
+                line-height: 15px;
+            }
+        }
+    }
+    
+}

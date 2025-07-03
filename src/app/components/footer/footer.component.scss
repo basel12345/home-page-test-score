@@ -1,0 +1,107 @@
+.footer-container {
+    .content {
+        padding: 73px 160px;
+        background-color: #154B89;
+        .description {
+            p {
+                max-width: 397px;
+                font-family: "LoewNextMeduim";
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 21px;
+                letter-spacing: 0;
+                color: #FFFFFF;
+            }
+        }
+
+        .section-two {
+            h3 {
+                font-family: "LoewNextBold";
+                font-weight: 700;
+                font-size: 18px;
+                line-height: 26px;
+                letter-spacing: 0%;
+                color: #FFFFFF;
+            }
+
+            .links {
+                margin-top: 10px;
+
+                a {
+                    font-family: "LoewNextMeduim";
+                    font-weight: 500;
+                    font-size: 14px;
+                    line-height: 21px;
+                    letter-spacing: 0;
+                    color: #FFFFFF;
+                    margin-inline: 5px;
+                    &:hover {
+                       cursor: pointer;
+                    }
+                }
+            }
+
+            .info {
+               font-family: "LoewNextMeduim";
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 21px;
+                letter-spacing: 0;
+                color: #FFFFFF;
+            }
+
+            a {
+                    cursor: pointer;
+            }
+        }
+    }
+
+    .copyright {
+        padding: 16px 24px;
+        border: 1px solid #0D3059;
+        background: #0D3059;
+        font-family: "LoewNextBold";
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 21px;
+        letter-spacing: 0%;
+        text-align: center;
+        color: #FFFFFF;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .footer-container {
+        .content {
+            padding: 40px 24px;
+            .description {
+                p {
+                    max-width: 100%;
+                }
+            }
+
+            .section-two {
+                h3 {
+                    font-size: 16px;
+                    line-height: 24px;
+                }
+
+                .contact {
+                    margin-top: 20px;
+                }
+
+                .links a {
+                    font-size: 12px;
+                    line-height: 18px;
+                }
+
+                .info {
+                    font-size: 12px;
+                    line-height: 18px;
+                }
+            }
+        }
+    }
+    
+}
