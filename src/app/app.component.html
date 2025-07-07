@@ -1,6 +1,13 @@
 <nav>
   <app-navbar/>
 </nav>
+<aside [ngClass]="{
+            'side-bar-section-absolute-active': sideBarService.openSideBar,
+            'side-bar-section-absolute': !sideBarService.openSideBar,
+            'd-block d-md-none': true,
+            }">
+  <app-sidebar />
+</aside>
 <section>
   <router-outlet></router-outlet>
 </section>

@@ -1,5 +1,5 @@
 .features {
-    padding: 80px 151px;
+    padding: 45px 151px;
 
     .head {
         position: relative;
@@ -80,7 +80,7 @@
 
 @media screen and (max-width: 768px) {
     .features {
-        padding: 100px 20px;
+        padding: 45px 20px;
 
         .head {
             font-size: 32px;
@@ -107,9 +107,44 @@
     }
 
     .image {
+        text-align: center;
+        padding: 10px;
+        div {
+           display: none;
+        }
         img {
             width: 100%;
-            height: auto;
+            height: 100%;
+            position: relative;
+            top: auto;
+            right: auto;
+        }
+    }
+    
+}
+
+
+@media (min-width:768px) and (max-width: 1517px) {
+    .section-features {
+        padding: 45px 10px;
+        .container-content {
+            flex-direction: column-reverse;
+            align-items: center;
+            .content {
+                margin-left: 0;
+                text-align: center;
+            }
+        }
+        
+    }
+
+    .image {
+        div {
+           display: none;
+        }
+        img {
+            width: 100%;
+            height: 100%;
             position: relative;
             top: auto;
             right: auto;

@@ -1,4 +1,4 @@
-<div class="navbar d-flex justify-content-between">
+<div class="navbar d-none d-md-flex justify-content-between">
   <div class="logo">
     <svg width="129" height="56" viewBox="0 0 129 56" fill="none" xmlns="http://www.w3.org/2000/svg">
         <g clip-path="url(#clip0_978_5297)">
@@ -45,4 +45,14 @@
     <button>Login</button>
   </div>
 
+</div>
+
+
+<div class="navbar d-md-none d-flex justify-content-between">
+  <a (click)="toogleSideBar()" class="sidebar-toggle">
+    <i class="pi pi-align-justify" style="font-size: 2.5rem"></i>
+  </a>
+   <div class="login d-flex align-items-center">
+    <button>Login</button>
+  </div>
 </div>
