@@ -23,7 +23,7 @@ export class NavbarComponent {
   }
 
   login() {
-    window.open('https://testandscoreapi.github.io/TASUI/')
+    window.location.replace('https://ielts-test.testandscore.com/')
   }
 
 }
