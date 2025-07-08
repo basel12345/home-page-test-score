@@ -25,24 +25,27 @@
   </div>
   <ul class="nav">
     <li class="nav-item">
-      <a class="link active" aria-current="page">Home</a>
+      <a class="link" routerLinkActive="active" routerLink="home" aria-current="page">Home</a>
     </li>
     <li class="nav-item">
-      <a class="link">About Us</a>
+      <a class="link" routerLinkActive="active">About Us</a>
     </li>
     <li class="nav-item">
-      <a class="link">Plane & Pricing</a>
+      <a class="link" routerLinkActive="active" (click)="scrollTo('pricing')">Plane & Pricing</a>
     </li>
      <li class="nav-item">
-      <a class="link">Support & Faq</a>
+      <a class="link" routerLinkActive="active" (click)="scrollTo('faq')">Support & Faq</a>
     </li>
      <li class="nav-item">
-      <a class="link">Contact us</a>
+      <a class="link" routerLinkActive="active" (click)="scrollTo('features')">Features</a>
+    </li>
+    <li class="nav-item">
+      <a class="link" routerLinkActive="active" (click)="scrollTo('footer')">Contact us</a>
     </li>
   </ul>
 
   <div class="login d-flex align-items-center">
-    <button>Login</button>
+    <button (click)="login()">Login</button>
   </div>
 
 </div>
@@ -53,6 +56,6 @@
     <i class="pi pi-align-justify" style="font-size: 2.5rem"></i>
   </a>
    <div class="login d-flex align-items-center">
-    <button>Login</button>
+    <button (click)="login()">Login</button>
   </div>
 </div>

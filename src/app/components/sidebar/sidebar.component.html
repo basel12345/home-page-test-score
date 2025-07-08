@@ -4,7 +4,7 @@
     </div>
     <div class="side-bar-body">
         <ul class="side-bar-menu">
-            <li class="side-bar-menu-item mb-2" routerLinkActive="active">
+            <li class="side-bar-menu-item mb-2" routerLinkActive="active" routerLink="home">
                 <a class="side-bar-menu-item-link d-flex align-items-center">
                     <span>Home</span>
                 </a>
@@ -15,19 +15,24 @@
                 </a>
             </li>
             <li class="side-bar-menu-item mb-2">
-                <a class="side-bar-menu-item-link d-flex align-items-center">
+                <a (click)="scrollTo('pricing')" class="side-bar-menu-item-link d-flex align-items-center">
                     <span>Plane & Pricing</span>
                 </a>
             </li>
 
             <li class="side-bar-menu-item mb-2">
-                <a class="side-bar-menu-item-link d-flex align-items-center">
+                <a (click)="scrollTo('faq')" class="side-bar-menu-item-link d-flex align-items-center">
                     <span>Support & Faq</span>
                 </a>
             </li>
 
             <li class="side-bar-menu-item mb-2">
-                <a class="side-bar-menu-item-link d-flex align-items-center">
+                <a (click)="scrollTo('features')" class="side-bar-menu-item-link d-flex align-items-center">
+                    <span>Features</span>
+                </a>
+            </li>
+            <li class="side-bar-menu-item mb-2">
+                <a (click)="scrollTo('footer')" class="side-bar-menu-item-link d-flex align-items-center">
                     <span>Contact us</span>
                 </a>
             </li>
