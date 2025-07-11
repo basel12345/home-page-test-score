@@ -4,6 +4,7 @@
     height: 80px;
     padding-right: 160px;
     padding-left: 160px;
+    animation: slideInDown 0.6s ease forwards;
 
     .nav {
         .link {
@@ -68,3 +69,15 @@
         }
     }
 }
+
+
+@keyframes slideInDown {
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}   

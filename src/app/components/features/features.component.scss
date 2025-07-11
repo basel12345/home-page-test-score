@@ -32,6 +32,7 @@
 .features-row {
     margin:0; 
     margin-bottom: 151px;
+    min-height: 466px;
 }
 .section-features {
     background-color: #F1F5F9;
@@ -63,7 +64,7 @@
             line-height: 19px;
             letter-spacing: 0;
             vertical-align: bottom;
-            width: 80%;
+            max-width: 70%;
             color: #6B7280;
         }
     }

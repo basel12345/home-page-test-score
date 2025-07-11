@@ -1,65 +1,67 @@
 <div class="testimonials">
-    <h1>User <div class="d-inline-block underline-title">Testimonials</div></h1>
-    <div class="row mt-4 g-4">
-        <div class="col-md-4 col-12">
+    @if (show) {
+    <h1 [@fadeInDown]="{ value: '', params: { duration: '800ms', offset: 'translateY(0)' } }" >User <div class="d-inline-block underline-title">Testimonials</div></h1>
+    <div #animBox class="row mt-4 g-4">
+            <div class="col-md-4 col-12" @fadeInBottomRight (@fadeInBottomRight.done)="onFirstAnimationDone()">
             <div class="cards">
                 <p-rating [(ngModel)]="value" />
                 <p class="mt-3">This platform helped me jump from 6.5 to 7.5 in just two months!</p>
-                <div class="d-flex align-items-center mt-2">
+                <div class="d-flex align-items-center mt-2" [style.dispaly]="showSecond? 'flex' : 'none'" [@fadeInDown]="{ value: '', params: { duration: '600ms', offset: 'translateY(70px)' } }">
                     <img src="assets/images/08296debf465307494a8aa57206ee7e5212fbfa1.png" alt="">
                     <div class="name ms-2">Armando McClure</div>
                 </div>
             </div>
         </div>
-        <div class="col-md-4 col-12">
+        <div class="col-md-4 col-12" @fadeInBottomRight (@fadeInBottomRight.done)="onFirstAnimationDone()">
             <div class="cards">
                 <p-rating [(ngModel)]="value" />
                 <p class="mt-3">This platform helped me jump from 6.5 to 7.5 in just two months!</p>
-                <div class="d-flex align-items-center mt-2">
+                <div class="d-flex align-items-center mt-2" [style.dispaly]="showSecond? 'flex' : 'none'" [@fadeInDown]="{ value: '', params: { duration: '600ms', offset: 'translateY(70px)' } }">
                     <img src="assets/images/08296debf465307494a8aa57206ee7e5212fbfa1.png" alt="">
                     <div class="name ms-2">Armando McClure</div>
                 </div>
             </div>
         </div>
-         <div class="col-md-4 col-12">
+         <div class="col-md-4 col-12" @fadeInBottomRight (@fadeInBottomRight.done)="onFirstAnimationDone()">
             <div class="cards">
                 <p-rating [(ngModel)]="value" />
                 <p class="mt-3">This platform helped me jump from 6.5 to 7.5 in just two months!</p>
-                <div class="d-flex align-items-center mt-2">
+                <div class="d-flex align-items-center mt-2" [style.dispaly]="showSecond? 'flex' : 'none'" [@fadeInDown]="{ value: '', params: { duration: '600ms', offset: 'translateY(70px)' } }">
                     <img src="assets/images/08296debf465307494a8aa57206ee7e5212fbfa1.png" alt="">
                     <div class="name ms-2">Armando McClure</div>
                 </div>
             </div>
         </div>
-        <div class="col-md-4 col-12">
+        <div class="col-md-4 col-12" @fadeInBottomRight (@fadeInBottomRight.done)="onFirstAnimationDone()">
             <div class="cards">
                 <p-rating [(ngModel)]="value" />
                 <p class="mt-3">This platform helped me jump from 6.5 to 7.5 in just two months!</p>
-                <div class="d-flex align-items-center mt-2">
+                <div class="d-flex align-items-center mt-2" [style.dispaly]="showSecond? 'flex' : 'none'" [@fadeInDown]="{ value: '', params: { duration: '600ms', offset: 'translateY(70px)' } }">
                     <img src="assets/images/08296debf465307494a8aa57206ee7e5212fbfa1.png" alt="">
                     <div class="name ms-2">Armando McClure</div>
                 </div>
             </div>
         </div>
-        <div class="col-md-4 col-12">
+        <div class="col-md-4 col-12" @fadeInBottomRight (@fadeInBottomRight.done)="onFirstAnimationDone()">
             <div class="cards">
                 <p-rating [(ngModel)]="value" />
                 <p class="mt-3">This platform helped me jump from 6.5 to 7.5 in just two months!</p>
-                <div class="d-flex align-items-center mt-2">
+                <div class="d-flex align-items-center mt-2" [style.dispaly]="showSecond? 'flex' : 'none'" [@fadeInDown]="{ value: '', params: { duration: '600ms', offset: 'translateY(70px)' } }">
                     <img src="assets/images/08296debf465307494a8aa57206ee7e5212fbfa1.png" alt="">
                     <div class="name ms-2">Armando McClure</div>
                 </div>
             </div>
         </div>
-         <div class="col-md-4 col-12">
+         <div class="col-md-4 col-12" @fadeInBottomRight (@fadeInBottomRight.done)="onFirstAnimationDone()">
             <div class="cards">
                 <p-rating [(ngModel)]="value" />
                 <p class="mt-3">This platform helped me jump from 6.5 to 7.5 in just two months!</p>
-                <div class="d-flex align-items-center mt-2">
+                <div class="d-flex align-items-center mt-2" [style.dispaly]="showSecond? 'flex' : 'none'" [@fadeInDown]="{ value: '', params: { duration: '600ms', offset: 'translateY(70px)' } }">
                     <img src="assets/images/08296debf465307494a8aa57206ee7e5212fbfa1.png" alt="">
                     <div class="name ms-2">Armando McClure</div>
                 </div>
             </div>
         </div>
     </div>
+}
 </div>

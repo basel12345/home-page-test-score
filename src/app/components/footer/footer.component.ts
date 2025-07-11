@@ -21,4 +21,12 @@ export class FooterComponent {
     this.router.navigate(['/privacy']);
   }
 
+  scrollTo(sectionId: string, path: string = '') {
+    if (path) {
+      this.router.navigate([path]);
+    }
+    const el = document.getElementById(sectionId);
+    if (el) el.scrollIntoView({ behavior:"smooth" });
+  }
+
 }

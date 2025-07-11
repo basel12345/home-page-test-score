@@ -1,13 +1,15 @@
 import { Component, inject } from '@angular/core';
 import { SidebarService } from './../../services/sidebar.service';
 import { RouterModule } from '@angular/router';
+import { fadeInDownAnimation } from '../../animations/fade-in.animation';
 
 @Component({
   selector: 'app-navbar',
   standalone: true,
   imports: [RouterModule],
-templateUrl: './navbar.component.html',
-  styleUrl: './navbar.component.scss'
+  templateUrl: './navbar.component.html',
+  styleUrl: './navbar.component.scss',
+  animations: []
 })
 export class NavbarComponent {
   private sidebarService = inject(SidebarService);

@@ -1,11 +1,15 @@
 .free-container {
-
+    min-height: 586px;
     .bg-image {
         background-image: url(../../../assets/images/94c600d97395ee71ddda19239246c0c2b4841c84.jpg);
         background-position: center center;
         background-repeat: no-repeat;
-        background-size: cover;
+        background-size: 100%;
         height: 409px;
+        transition: background-size 2s ease-in-out;
+        &.zoomed {
+          background-size: 120%;
+        }
     }
 
     .info-section {
@@ -79,6 +83,7 @@
 
 @media screen and (max-width: 810px) {
     .free-container {
+        min-height: 380px;
         .info-section {
             padding: 20px;
 
@@ -104,6 +109,16 @@
                 margin-top: 10px;
             }
         }
+    }
+    
+}
+
+@media screen and (max-width: 768px) {
+    .free-container {
+        .bg-image {
+            height: 185px;
+        }
+       
     }
     
 }
